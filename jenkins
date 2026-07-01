@@ -10,7 +10,7 @@ pipeline {
 
         stage('Run Command') {
             steps {
-                sh 'echo Running a shell command in Jenkins pipeline script'
+                sh 'echo Running a shell command in Jenkins script'
                 sh 'pwd'
             }
         }

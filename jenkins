@@ -4,8 +4,16 @@ pipeline {
     stages {
         stage('Say Hello') {
             steps {
-                echo 'Hello from Jenkins Day 1 🚀'
+                echo 'Hello from Day 2 🚀'
+            }
+        }
+
+        stage('Run Command') {
+            steps {
+                sh 'echo Running a shell command in Jenkins'
+                sh 'pwd'
             }
         }
     }
+}
 }
